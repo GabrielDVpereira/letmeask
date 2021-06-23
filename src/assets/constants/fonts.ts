@@ -1,7 +1,11 @@
 export const fonts = {
+  fontFamily: 'Roboto',
   title: {
-    fontWeight: 700,
-    fontFamily: 'Roboto',
-    fontSize: 24
+    fontSize: '24px',
+    fontWeight: 700
+  },
+  body: {
+    fontSize: '16px',
+    fontWeight: 400
   }
 }
