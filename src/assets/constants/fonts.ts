@@ -7,5 +7,9 @@ export const fonts = {
   body: {
     fontSize: '16px',
     fontWeight: 400
+  },
+  paragraph: {
+    fontSize: '14px',
+    fontWeight: 400
   }
 }

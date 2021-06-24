@@ -5,7 +5,7 @@ import { Button } from './styles';
 interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
   color: 'danger' | 'gray' | 'primary'
   outlined?: boolean
-  size: 'lg' | 'md' | 'sm'
+  size: 'lg' | 'md' | 'sm' | 'xm'
   children: ReactNode
 }
 

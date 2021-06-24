@@ -12,6 +12,10 @@ declare module 'styled-components' {
       body: {
         fontSize: string,
         fontWeight: number
+      },
+      paragraph: {
+        fontSize: string,
+        fontWeight: number
       }
     }
     colors: {
