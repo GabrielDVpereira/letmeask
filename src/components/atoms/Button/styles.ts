@@ -120,5 +120,9 @@ export const Button = styled.button<ButtonStyle>`
   ${({ size }) => buttonBySize(size)};
   ${({ color, outlined }) => outlined ? outlinedByColor(color) : buttonByColor(color)};
   font-size: ${({ theme }) => theme.fonts.body.fontSize};
+  font-weight: 500;
   transition: all .2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
