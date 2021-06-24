@@ -1,18 +1,18 @@
 
 import { HtmlHTMLAttributes, ReactNode } from 'react'
-import { Button } from './styles';
+import { Button as ButtonStyled } from './styles';
 
-interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
   color: 'danger' | 'gray' | 'primary'
   outlined?: boolean
   size: 'lg' | 'md' | 'sm' | 'xm'
   children: ReactNode
 }
 
-export default function ButtonAtom({ color, outlined = false, size, children, ...rest }: ButtonProps) {
+export function Button({ color, outlined = false, size, children, ...rest }: ButtonProps) {
   return (
-    <Button {...rest} color={color} outlined={outlined} size={size}>
+    <ButtonStyled {...rest} color={color} outlined={outlined} size={size}>
       {children}
-    </Button>
+    </ButtonStyled>
   )
 }
