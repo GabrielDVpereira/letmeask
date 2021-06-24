@@ -1,3 +1,6 @@
+import { Button } from 'src/components/atoms'
 export function Login() {
-  return <h1>Login Page</h1>
+  return (
+    <Button size="md" color="primary">Teste</Button>
+  )
 }
