@@ -6,6 +6,7 @@ interface ButtonStyle {
   color: 'danger' | 'gray' | 'primary'
   outlined: boolean
   size: 'lg' | 'md' | 'sm' | 'xm'
+  borderRadius?: number
 }
 
 /** Colors */
@@ -120,6 +121,7 @@ export const Button = styled.button<ButtonStyle>`
   ${({ size }) => buttonBySize(size)};
   ${({ color, outlined }) => outlined ? outlinedByColor(color) : buttonByColor(color)};
   font-size: ${({ theme }) => theme.fonts.body.fontSize};
+  border-radius: ${({ borderRadius, theme }) => borderRadius || theme.borderRadius}px;
   font-weight: 500;
   transition: all .2s;
   display: flex;

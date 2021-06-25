@@ -1,5 +1,6 @@
 import { Button } from 'src/components/atoms';
 import { ButtomWithIcon } from 'src/components/molecules';
+import { CopyButton } from 'src/components/organisms';
 import { FiLogIn } from 'react-icons/fi';
 import { FcGoogle } from 'react-icons/fc';
 
@@ -16,6 +17,7 @@ export function Login() {
       <Button size="xm" color="primary" outlined >Teste</Button> <br /><br />
       <ButtomWithIcon icon={FiLogIn} size="lg">Entrar na Sala</ButtomWithIcon><br /><br />
       <ButtomWithIcon icon={FcGoogle} outlined size="lg" >Crie sua sala com Google</ButtomWithIcon><br /><br />
+      <CopyButton copyInfo='aaaaaaa'>Sala #30293</CopyButton><br /><br />
     </div>
   )
 }

@@ -7,11 +7,12 @@ export interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
   outlined?: boolean
   size?: 'lg' | 'md' | 'sm' | 'xm'
   children: ReactNode
+  borderRadius?: number
 }
 
-export function Button({ color = "gray", outlined = false, size = "md", children, ...rest }: ButtonProps) {
+export function Button({ color = "gray", outlined = false, size = "md", borderRadius, children, ...rest }: ButtonProps) {
   return (
-    <ButtonStyled {...rest} color={color} outlined={outlined} size={size}>
+    <ButtonStyled  {...rest} color={color} outlined={outlined} size={size} borderRadius={borderRadius}>
       {children}
     </ButtonStyled>
   )
