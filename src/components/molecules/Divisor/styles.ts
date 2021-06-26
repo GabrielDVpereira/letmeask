@@ -4,9 +4,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 export const Line = styled.div`
   height: 1px;
-  width: 100%;
+  width: inherit;
   background-color: ${({ theme }) => theme.colors.gray.medium};
 `;
 
@@ -15,3 +16,16 @@ export const Text = styled.span`
   font-size: ${({ theme }) => theme.fonts.paragraph.fontSize};
   margin: 0 1rem;
 `;
+
+export const ContainerWithText = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  span {
+    width: 100%;
+  }
+  div { 
+    width: 50%;
+  }
+`;
+

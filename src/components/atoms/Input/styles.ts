@@ -5,6 +5,7 @@ const input = css`
   padding: 16px;
   width: 100%;
   border-radius: ${({ theme }) => theme.borderRadius};
+  border-style: solid;
   border-width: 1px;
   border-color:  ${({ theme }) => theme.colors.gray.medium};
   outline: none;

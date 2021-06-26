@@ -12,7 +12,7 @@ import { theme } from './styles/theme';
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider resetCSS={false} >
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Login />
