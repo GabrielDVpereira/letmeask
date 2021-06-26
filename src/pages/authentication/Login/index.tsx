@@ -1,4 +1,4 @@
-import { Button, Input } from 'src/components/atoms';
+import { Button, Input, Logo } from 'src/components/atoms';
 import { ButtomWithIcon } from 'src/components/molecules';
 import { CopyButton, Divisor } from 'src/components/molecules';
 import { FiLogIn } from 'react-icons/fi';
@@ -21,6 +21,7 @@ export function Login() {
       <Input placeholder="Text" /><br /><br />
       <Input type="textarea" placeholder="Text" /><br /><br />
       <Divisor text="aaaaaaaaaaaaaa" />
+      <Logo />
     </div>
   )
 }
