@@ -20,7 +20,7 @@ export function CopyButton({ children, copyInfo, ...rest }: CopyButtonProps) {
     e.preventDefault();
     navigator.clipboard.writeText(copyInfo)
     setToltipLabel('Copied!');
-  }, [])
+  }, [copyInfo])
 
   return (
     <Tooltip label={toltipLabel} placement="top" onClose={() => setToltipLabel('Copy')} hasArrow>

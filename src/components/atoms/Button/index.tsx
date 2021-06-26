@@ -1,6 +1,6 @@
 
 import { HtmlHTMLAttributes, ReactNode } from 'react'
-import { Button as ButtonStyled } from './styles';
+import { Button as StyledButton } from './styles';
 
 export interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
   color?: 'danger' | 'gray' | 'primary'
@@ -12,8 +12,8 @@ export interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
 
 export function Button({ color = "gray", outlined = false, size = "md", borderRadius, children, ...rest }: ButtonProps) {
   return (
-    <ButtonStyled  {...rest} color={color} outlined={outlined} size={size} borderRadius={borderRadius}>
+    <StyledButton  {...rest} color={color} outlined={outlined} size={size} borderRadius={borderRadius}>
       {children}
-    </ButtonStyled>
+    </StyledButton>
   )
 }

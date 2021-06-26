@@ -63,5 +63,6 @@ export const Container = styled.div<ContainerProps>`
     padding-left: 2.75rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+    border-radius: ${({ borderRadius }) => borderRadius}px;
   }
 `;

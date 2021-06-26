@@ -1,6 +1,6 @@
-import { Button } from 'src/components/atoms';
+import { Button, Input } from 'src/components/atoms';
 import { ButtomWithIcon } from 'src/components/molecules';
-import { CopyButton } from 'src/components/organisms';
+import { CopyButton, Divisor } from 'src/components/molecules';
 import { FiLogIn } from 'react-icons/fi';
 import { FcGoogle } from 'react-icons/fc';
 
@@ -18,6 +18,9 @@ export function Login() {
       <ButtomWithIcon icon={FiLogIn} size="lg">Entrar na Sala</ButtomWithIcon><br /><br />
       <ButtomWithIcon icon={FcGoogle} outlined size="lg" >Crie sua sala com Google</ButtomWithIcon><br /><br />
       <CopyButton copyInfo='aaaaaaa'>Sala #30293</CopyButton><br /><br />
+      <Input placeholder="Text" /><br /><br />
+      <Input type="textarea" placeholder="Text" /><br /><br />
+      <Divisor text="aaaaaaaaaaaaaa" />
     </div>
   )
 }
