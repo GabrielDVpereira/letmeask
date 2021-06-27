@@ -8,6 +8,7 @@ const input = css`
   border-style: solid;
   border-width: 1px;
   border-color:  ${({ theme }) => theme.colors.gray.medium};
+  font-size: ${({ theme }) => theme.fonts.body.fontSize};
   outline: none;
 
   &::placeholder {

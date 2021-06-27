@@ -1,18 +1,17 @@
-import { Logo, Input } from 'src/components/atoms';
+import { Input } from 'src/components/atoms';
 import { ButtomWithIcon, Divisor } from 'src/components/molecules';
 import { AuthBase } from 'src/components/organisms';
 import { Container } from './styles';
-import { FaGoogle } from 'react-icons/fa'
+import { FcGoogle } from 'react-icons/fc'
 import { FiLogIn } from 'react-icons/fi'
 
 
 
-export function Login() {
+export function LoginRegular() {
   return (
     <AuthBase>
       <Container>
-        <Logo />
-        <ButtomWithIcon icon={FaGoogle} color="danger" size="lg">
+        <ButtomWithIcon icon={FcGoogle} size="lg" outlined>
           Crie sua sala com o Google
        </ButtomWithIcon>
         <Divisor text="ou entre em uma sala" />

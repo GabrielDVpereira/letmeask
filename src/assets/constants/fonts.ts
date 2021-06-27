@@ -1,15 +1,15 @@
 export const fonts = {
   fontFamily: 'Roboto',
   title: {
-    fontSize: '24px',
+    fontSize: '1.5rem',
     fontWeight: 700
   },
   body: {
-    fontSize: '16px',
+    fontSize: '1rem',
     fontWeight: 400
   },
   paragraph: {
-    fontSize: '14px',
+    fontSize: '0.875rem',
     fontWeight: 400
   }
 }

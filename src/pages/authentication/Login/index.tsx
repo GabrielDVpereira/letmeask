@@ -1,5 +1,5 @@
-import { Login as LoginTemplate } from 'src/components/templates'
+import { LoginAdmin, LoginRegular, RegisterRoom } from 'src/components/templates'
 
 export function Login() {
-  return <LoginTemplate />
+  return <LoginAdmin />
 }

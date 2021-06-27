@@ -62,17 +62,17 @@ const outlinedPrimary = css`
 const xm = css`
   padding:  0.55rem 0;
   width: 8.5rem; 
-  font-size: ${({ theme }) => theme.fonts.paragraph.fontSize};;
+  font-size: ${({ theme }) => theme.fonts.paragraph.fontSize};
 `;
 
 const sm = css`
   padding:  1rem 0;
-  width: 8.5rem
+  width: 8.5rem;
 `;
 
 const md = css`
   padding:  1rem 0;
-  width: 11.25rem
+  width: 11.25rem;
 `;
 
 const lg = css`

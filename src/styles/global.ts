@@ -32,6 +32,10 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: 600;
   }
 
+  a {
+    color: ${({ theme }) => theme.colors.pink.dark}
+  }
+
   button {
       cursor: pointer;
   }

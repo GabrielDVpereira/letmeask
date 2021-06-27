@@ -19,14 +19,14 @@ const translateY = keyframes`
 `;
 
 export const fadeAndTranslateAnimation = css`
-    animation: ${fade} 0.2s ease-in, ${translateY} 0.2s ease-in;
+    animation: ${fade} 0.3s ease-in, ${translateY} 0.2s ease-out;
 
 `
 
 export const fadeInAnimation = css`
-  animation: ${fade} 0.3s ease-in;
+  animation: ${fade} 0.5s ease-in;
 `;
 
 export const translateAnimation = css`
-  animation: ${translateY} 0.2s ease-in;
+  animation: ${translateY} 0.2s ease-out;
 `
