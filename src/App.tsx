@@ -1,10 +1,7 @@
 
 import { ThemeProvider } from 'styled-components';
 import { ChakraProvider } from "@chakra-ui/react"
-
-
-import { Login } from './pages/authentication';
-
+import { Routes } from './routes'
 import { GlobalStyle } from './styles/global'
 import { theme } from './styles/theme';
 
@@ -15,7 +12,7 @@ function App() {
     <ChakraProvider resetCSS={false} >
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Login />
+        <Routes />
       </ThemeProvider>
     </ChakraProvider>
   );
