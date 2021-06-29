@@ -8,7 +8,6 @@ import { IoClose } from 'react-icons/io5'
 export function HeaderMobile() {
     const [isButtonsVisible, setButtonsVisible] = useState(false)
 
-
     const renderMenuButtons = () => {
         if (isButtonsVisible) {
             return <IoClose onClick={() => setButtonsVisible(false)} />

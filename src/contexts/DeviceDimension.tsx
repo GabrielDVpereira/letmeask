@@ -32,7 +32,7 @@ export function DeviceDimensionsProvider({ children }: DeviceDimensionsProviderP
 
     return (
         <DeviceDimensionsContext.Provider value={{
-            isDesktop: dimensions.width >= 768,
+            isDesktop: dimensions.width >= 768, // ipad width 
             isMobile: dimensions.width < 768,
             dimensions: dimensions
         }}>
