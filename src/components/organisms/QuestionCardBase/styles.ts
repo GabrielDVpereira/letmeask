@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { darken } from 'polished'
 
 export const Content = styled.div`
   svg {
@@ -25,26 +24,3 @@ export const UserName = styled.div`
   }
 `;
 
-export const LikeButton = styled.div`
-    display: flex;
-    svg {
-      cursor: pointer;     
-      &:hover {
-        color: ${({ theme }) => darken(0.1, theme.colors.gray.dark)};
-      }
-
-  }
-`;
-export const AdminButtons = styled.div`
-  svg {
-      margin-right: 1rem;
-      cursor: pointer;
-      &:last-child {
-        margin-right: 0;
-      }
-      &:hover {
-        color: ${({ theme }) => darken(0.1, theme.colors.gray.dark)};
-      }
-
-  }
-`;
