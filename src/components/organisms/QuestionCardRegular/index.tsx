@@ -15,7 +15,7 @@ export function QuestionCardRegular({ onLike, likes, question, userName }: Quest
             userName={userName}
         >
             <LikeButton>
-                {likes}
+                <span>{likes}</span>
                 <AiOutlineLike onClick={onLike} />
             </LikeButton>
         </QuestionCardBase>
