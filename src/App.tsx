@@ -4,6 +4,8 @@ import { ChakraProvider } from "@chakra-ui/react"
 import { Routes } from './routes'
 import { GlobalStyle } from './styles/global'
 import { theme } from './styles/theme';
+import { Modal } from 'src/components/organisms'
+
 
 
 
@@ -13,6 +15,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Routes />
+        <Modal />
       </ThemeProvider>
     </ChakraProvider>
   );

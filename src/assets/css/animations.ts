@@ -18,6 +18,15 @@ const translateY = keyframes`
   }
 `;
 
+const scale = keyframes`
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    opacity: scale(1);
+  }
+`
+
 export const fadeAndTranslateAnimation = css`
     animation: ${fade} 0.3s ease-in, ${translateY} 0.2s ease-out;
 
@@ -30,3 +39,7 @@ export const fadeInAnimation = css`
 export const translateAnimation = css`
   animation: ${translateY} 0.2s ease-out;
 `
+
+export const scaleAnimation = css`
+  animation: ${scale} 0.25s linear;
+`;
