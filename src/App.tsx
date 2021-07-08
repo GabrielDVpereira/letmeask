@@ -5,9 +5,7 @@ import { Routes } from './routes'
 import { GlobalStyle } from './styles/global'
 import { theme } from './styles/theme';
 import { Modal } from 'src/components/organisms'
-
-
-
+import modalRef from 'src/components/organisms/Modal/modalRef'
 
 function App() {
   return (
@@ -15,7 +13,9 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Routes />
-        <Modal />
+        <Modal ref={(ref) => {
+          modalRef.ref = ref
+        }} />
       </ThemeProvider>
     </ChakraProvider>
   );
